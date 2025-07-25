@@ -206,3 +206,41 @@ details p, .note {
   transition: background .25s;
 }
 .btn:hover { background: #c46c90; }
+.site-header {
+  padding: 10px 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.site-logo {
+  height: 60px;
+  width: auto;
+  border-radius: 8px; /* optionnel pour des coins arrondis */
+}
+
+.site-title {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+
+@media (max-width: 600px) {
+  .site-logo {
+    height: 40px;
+  }
+
+  .site-title {
+    font-size: 18px;
+  }
+}
