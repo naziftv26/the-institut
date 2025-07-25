@@ -261,7 +261,7 @@ details p, .note {
 }
 
 .hero-title {
-font-family: 'Rosie Kiley', serif; /* ou 'Gale', sans-serif selon ce que tu choisis */
+font-family: 'Gale', serif; /* ou 'Gale', sans-serif selon ce que tu choisis */
   font-size: 52px;
   color: #b48a78;
   font-weight: normal;
