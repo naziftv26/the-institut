@@ -234,36 +234,35 @@ details p, .note {
   margin: 0;
 }
 
-
 .hero-section {
-  background-color: #fff5f7;
-  padding: 90px 20px;
+  background-color: #fbf5f7;
+  padding: 100px 20px;
   text-align: center;
 }
 
 .logo-wrapper {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 .hero-logo {
-  height: 120px;
+  height: 140px;
   width: auto;
-  border-radius: 50%;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .hero-logo:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px) scale(1.07);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
 }
 
 .hero-title {
   font-family: 'Playfair Display', serif;
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 400;
   color: #b86b77;
   margin: 0;
@@ -272,15 +271,16 @@ details p, .note {
 
 .hero-subtitle {
   font-family: 'Montserrat', sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   color: #7c5a60;
   margin-top: 10px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
 }
 
+/* Responsive */
 @media (max-width: 600px) {
-  .hero-logo { height: 90px; }
+  .hero-logo { height: 100px; }
   .hero-title { font-size: 28px; }
-  .hero-subtitle { font-size: 15px; }
+  .hero-subtitle { font-size: 16px; }
 }
