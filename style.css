@@ -261,10 +261,10 @@ details p, .note {
 }
 
 .hero-title {
-font-family: 'Italianno', cursive;
-  font-size: 60px;
+font-family: 'Rosie Kiley', serif; /* ou 'Gale', sans-serif selon ce que tu choisis */
+  font-size: 52px;
   color: #b48a78;
-  margin-bottom: 10px;
+  font-weight: normal;
 
 }
 
