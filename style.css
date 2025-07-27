@@ -213,20 +213,55 @@
     color: white;
   }
 
-</style>
-<script>
-  document.querySelectorAll('.filter-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
+.presta-icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
 
-      const filter = button.getAttribute('data-filter');
-      document.querySelectorAll('.presta-card').forEach(card => {
-        if (filter === 'all' || card.classList.contains(filter)) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
+.presta-card:hover .presta-icon img {
+  transform: scale(1.1) rotate(-3deg);
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
+}
+
+</style>
+
+<style>
+  .presta-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .presta-icon img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.presta-card');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const filter = button.getAttribute('data-filter');
+        cards.forEach(card => {
+          if (filter === 'all' || card.classList.contains(filter)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
       });
     });
   });
