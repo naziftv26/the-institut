@@ -111,3 +111,66 @@
   animation-delay: 0.9s;
 }
 
+#prestations {
+  padding: 80px 20px;
+  background: #fff8f6;
+  text-align: center;
+}
+
+.presta-section {
+  margin-bottom: 60px;
+}
+
+.presta-category {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: #b48a78;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.presta-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.presta-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.presta-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.presta-card h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #5c3c36;
+  margin-bottom: 0.5rem;
+}
+
+.presta-details {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b48a78;
+  margin-bottom: 1rem;
+}
+
+.presta-card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.4;
+}
+
+.cta {
+  margin-top: 40px;
+}
