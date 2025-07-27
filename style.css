@@ -1,315 +1,71 @@
-
-:root {
-  --primary: #b8926a;
-  --background: #fff;
-  --light: #f4f4f4;
-  --text: #333;
+.hero-overlay {
+  background: linear-gradient(135deg, #fff4f4, #ffe8e8);
+  /* ...autres styles inchangés */
 }
-
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background: var(--background);
-  color: var(--text);
-  scroll-behavior: smooth;
-}
-
-header {
-  background: var(--primary);
-  color: #fff;
-  text-align: center;
-  padding: 40px 20px;
-}
-
-header img.logo {
-  max-width: 140px;
-  margin-bottom: 20px;
-}
-
-nav {
-  position: sticky;
-  top: 0;
-  background: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  padding: 12px;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 600;
-}
-
-section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-section h2 {
-  color: var(--primary);
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2rem;
-}
-
-.centered-text {
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
-}
-
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-}
-
-.services li {
-  background: var(--light);
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.gallery img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.contact-info {
-  text-align: center;
-  line-height: 1.6;
-  font-size: 1.1rem;
-}
-
-
-footer {
-  background: var(--primary);
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-@media (max-width: 600px) {
-  header img.logo {
-    max-width: 120px;
-  }
-  section h2 {
-    font-size: 1.6rem;
-  }
-}
-
-
-#prestations {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-  background: #fdf9f6;
-}
-
-#prestations {
-  max-width: 1000px;
-  margin: 80px auto;
-  padding: 0 20px 60px;
-  background: #fffaf7;
-  border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.05);
-}
-#prestations h2 {
-  text-align: center;
-  color: #b8926a;
-  font-size: 2.4rem;
-  margin: 0 0 30px;
-}
-.info {
-  background: #fff;
-  border: 1px solid #f0e6df;
-  border-radius: 12px;
-  padding: 18px 20px;
-  margin-bottom: 30px;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-.cat { margin-bottom: 40px; }
-.cat-title {
-  color: #d88fa3;
-  margin: 24px 0 16px;
-  font-size: 1.5rem;
-}
-details {
-  background: #fff;
-  border: 1px solid #f1e9e4;
-  border-radius: 12px;
-  margin-bottom: 10px;
-  padding: 14px 18px;
-  transition: box-shadow .2s;
-}
-details[open] {
-  box-shadow: 0 4px 12px rgba(0,0,0,.04);
-}
-summary {
-  cursor: pointer;
-  list-style: none;
-  font-weight: 600;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-summary::-webkit-details-marker { display: none; }
-summary span {
-  font-weight: 400;
-  color: #666;
-  font-size: 0.95rem;
-}
-details p, .note {
-  margin-top: 10px;
-  color: #444;
-  line-height: 1.6;
-}
-.cta {
-  text-align: center;
-  margin-top: 50px;
-}
-.btn {
-  display: inline-block;
-  background: #d88fa3;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 999px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: background .25s;
-}
-.site-header {
-  padding: 10px 20px;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.site-logo {
-  height: 60px;
-  width: auto;
-  border-radius: 8px; /* optionnel pour des coins arrondis */
-}
-
-.site-title {
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 24px;
-  color: #333;
-  margin: 0;
-}
-
-.hero-section {
-  background-color: #fbf5f7;
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.logo-wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-
-
-.hero-logo:hover {
-  transform: translateY(-6px) scale(1.07);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-}
-
-
-
-
-
-/* Responsive */
-@media (max-width: 600px) {
-  .hero-logo { height: 100px; }
-  .hero-title { font-size: 28px; }
-  .hero-subtitle { font-size: 16px; }
-}
-
-
 .hero-modern {
   position: relative;
   height: 100vh;
-  background: url('images/photo1.jpg') center/cover no-repeat; /* ou change l’image */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  background: url('images/photo1.jpg') center/cover no-repeat;
+  filter: brightness(0.6) blur(4px);
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 
 .hero-overlay {
-  background-color: rgba(255, 255, 255, 0.8); /* voile doux blanc transparent */
-  width: 100%;
-  height: 100%;
+  background: linear-gradient(135deg, #fff4f4ee, #ffe8e8ee);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .hero-content {
+  position: relative;
+  z-index: 3;
   text-align: center;
   padding: 2rem;
-  backdrop-filter: blur(5px);
   border-radius: 1rem;
+  backdrop-filter: blur(4px);
 }
 
 .hero-logo {
   max-height: 80px;
   margin-bottom: 1rem;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.1));
 }
 
 .hero-title {
   font-family: 'Italianno', cursive;
-  font-size: 64px;
+  font-size: 60px;
   color: #b48a78;
-  margin: 0.5rem 0;
+  margin-bottom: 0.5rem;
 }
 
 .hero-subtitle {
   font-family: 'Poppins', sans-serif;
   font-size: 22px;
-  color: #444;
-  margin-bottom: 1.5rem;
+  color: #6e4c4c;
+  margin-bottom: 2rem;
 }
 
 .btn {
   background-color: #b48a78;
   color: white;
-  padding: 12px 24px;
+  padding: 12px 30px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 500;
-  transition: background 0.3s;
+  box-shadow: 0 4px 12px rgba(180, 138, 120, 0.3);
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #a47265;
+  background-color: #a57164;
 }
-
