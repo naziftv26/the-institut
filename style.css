@@ -1,3 +1,5 @@
+<style>
+
 .hero-overlay {
   background: linear-gradient(135deg, #fff4f4, #ffe8e8);
   /* ...autres styles inchangés */
@@ -111,10 +113,10 @@
   animation-delay: 0.9s;
 }
 
-<style>
+
   #prestations {
     padding: 80px 20px;
-    background: linear-gradient(180deg, #fff4f4 0%, #ffe8e8 100%);
+    background: linear-gradient(180deg, #fff1f1 0%, #ffe4e4 100%);
     font-family: 'Poppins', sans-serif;
   }
   .container {
@@ -140,30 +142,34 @@
     gap: 30px;
   }
   .presta-card {
-    background: white;
-    border-radius: 18px;
+    position: relative;
     padding: 24px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.4s ease;
   }
   .presta-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
   }
   .presta-card h4 {
-    font-size: 18px;
+    font-size: 20px;
     color: #5c3c36;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
   .duration-price {
     display: block;
     font-size: 14px;
+    font-weight: 500;
     color: #b48a78;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
   .presta-card p {
     font-size: 15px;
-    color: #444;
+    color: #333;
     line-height: 1.5;
   }
   .cta {
@@ -173,13 +179,16 @@
   .btn {
     background: #b48a78;
     color: white;
-    padding: 12px 30px;
+    padding: 14px 34px;
     font-size: 16px;
     border-radius: 30px;
     text-decoration: none;
-    transition: background 0.3s;
+    font-weight: 500;
+    box-shadow: 0 4px 16px rgba(180, 138, 120, 0.3);
+    transition: background 0.3s, transform 0.2s;
   }
   .btn:hover {
     background: #a4695f;
+    transform: scale(1.05);
   }
 </style>
