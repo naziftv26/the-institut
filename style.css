@@ -191,4 +191,45 @@
     background: #a4695f;
     transform: scale(1.05);
   }
+
+ .presta-filters {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .filter-btn {
+    background: none;
+    border: 2px solid #b48a78;
+    color: #b48a78;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 0 10px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease;
+  }
+  .filter-btn:hover,
+  .filter-btn.active {
+    background: #b48a78;
+    color: white;
+  }
+
 </style>
+<script>
+  document.querySelectorAll('.filter-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const filter = button.getAttribute('data-filter');
+      document.querySelectorAll('.presta-card').forEach(card => {
+        if (filter === 'all' || card.classList.contains(filter)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+
