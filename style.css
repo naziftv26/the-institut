@@ -111,66 +111,75 @@
   animation-delay: 0.9s;
 }
 
-#prestations {
-  padding: 80px 20px;
-  background: #fff8f6;
-  text-align: center;
-}
-
-.presta-section {
-  margin-bottom: 60px;
-}
-
-.presta-category {
-  font-family: 'Poppins', sans-serif;
-  font-size: 28px;
-  color: #b48a78;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.presta-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.presta-card {
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
-  padding: 24px;
-  width: 300px;
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.presta-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-}
-
-.presta-card h4 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  color: #5c3c36;
-  margin-bottom: 0.5rem;
-}
-
-.presta-details {
-  font-size: 14px;
-  font-weight: 600;
-  color: #b48a78;
-  margin-bottom: 1rem;
-}
-
-.presta-card p {
-  font-size: 15px;
-  color: #444;
-  line-height: 1.4;
-}
-
-.cta {
-  margin-top: 40px;
-}
+<style>
+  #prestations {
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #fff4f4 0%, #ffe8e8 100%);
+    font-family: 'Poppins', sans-serif;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #b48a78;
+    margin-bottom: 60px;
+  }
+  .presta-category {
+    font-size: 26px;
+    color: #9c6b60;
+    margin-bottom: 30px;
+    border-left: 5px solid #b48a78;
+    padding-left: 12px;
+  }
+  .presta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  .presta-card {
+    background: white;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .presta-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  }
+  .presta-card h4 {
+    font-size: 18px;
+    color: #5c3c36;
+    margin-bottom: 6px;
+  }
+  .duration-price {
+    display: block;
+    font-size: 14px;
+    color: #b48a78;
+    margin-bottom: 10px;
+  }
+  .presta-card p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.5;
+  }
+  .cta {
+    text-align: center;
+    margin-top: 60px;
+  }
+  .btn {
+    background: #b48a78;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  .btn:hover {
+    background: #a4695f;
+  }
+</style>
