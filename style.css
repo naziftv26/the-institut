@@ -96,16 +96,6 @@ section h2 {
   font-size: 1.1rem;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: var(--primary);
-  color: #fff;
-  border-radius: 24px;
-  text-decoration: none;
-  font-weight: 600;
-}
 
 footer {
   background: var(--primary);
@@ -205,7 +195,6 @@ details p, .note {
   text-decoration: none;
   transition: background .25s;
 }
-.btn:hover { background: #c46c90; }
 .site-header {
   padding: 10px 20px;
   background-color: #fff;
@@ -247,40 +236,80 @@ details p, .note {
   gap: 20px;
 }
 
-.hero-logo {
-  height: 140px;
-  width: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
+
 
 .hero-logo:hover {
   transform: translateY(-6px) scale(1.07);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
 }
 
-.hero-title {
-font-family: 'Gale', serif; /* ou 'Gale', sans-serif selon ce que tu choisis */
-  font-size: 52px;
-  color: #b48a78;
-  font-weight: normal;
 
-}
 
-.hero-subtitle {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  color: #7c5a60;
-  margin-top: 10px;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-}
+
 
 /* Responsive */
 @media (max-width: 600px) {
   .hero-logo { height: 100px; }
   .hero-title { font-size: 28px; }
   .hero-subtitle { font-size: 16px; }
+}
+
+
+.hero-modern {
+  position: relative;
+  height: 100vh;
+  background: url('images/photo1.jpg') center/cover no-repeat; /* ou change l’image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background-color: rgba(255, 255, 255, 0.8); /* voile doux blanc transparent */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 2rem;
+  backdrop-filter: blur(5px);
+  border-radius: 1rem;
+}
+
+.hero-logo {
+  max-height: 80px;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-family: 'Italianno', cursive;
+  font-size: 64px;
+  color: #b48a78;
+  margin: 0.5rem 0;
+}
+
+.hero-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #b48a78;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #a47265;
 }
 
