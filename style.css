@@ -260,6 +260,34 @@
   }
 
 
+  .presta-meta {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 0.5rem 0 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    color: #b48a78;
+    background: #fef4f1;
+    padding: 6px 16px;
+    border-radius: 30px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  .presta-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .price {
+    color: #a55845;
+    font-weight: 600;
+  }
+
+
+
 </style>
 
 <script>
