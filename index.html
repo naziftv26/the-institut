@@ -584,5 +584,28 @@
   &copy; 2025 The Institut – Tous droits réservés
 </footer>
 
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.presta-card');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Retire la classe active de tous les boutons
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+
+      cards.forEach(card => {
+        if (filter === 'all' || card.classList.contains(filter)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
