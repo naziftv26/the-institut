@@ -142,6 +142,15 @@
     gap: 1.2rem;
     margin-bottom: 4rem;
   }
+.presta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.presta-card {
+  display: flex; /* important pour la réapparition */
+  flex-direction: column;
+}
     .presta-card {
     background: #fffdfd;
     border-radius: 14px;

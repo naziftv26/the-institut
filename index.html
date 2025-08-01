@@ -585,23 +585,25 @@
 </footer>
 
 <script>
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.presta-card');
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.presta-card');
 
-  filterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      // Retire la classe active de tous les boutons
-      filterButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // activer le bouton
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
 
-      const filter = btn.getAttribute('data-filter');
+        const filter = button.getAttribute('data-filter');
 
-      cards.forEach(card => {
-        if (filter === 'all' || card.classList.contains(filter)) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
+        cards.forEach(card => {
+          if (filter === 'all' || card.classList.contains(filter)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
       });
     });
   });
