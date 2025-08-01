@@ -138,22 +138,37 @@
   }
   .presta-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+    margin-bottom: 4rem;
   }
-  .presta-card {
+    .presta-card {
+    background: #fffdfd;
+    border-radius: 14px;
+    padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+    min-height: 180px;
     position: relative;
-    padding: 24px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    transition: all 0.4s ease;
+  }
+  .presta-card p {
+    font-size: 13px;
+    color: #5e4640;
+    margin: 0;
+    max-width: 95%;
+  }
+ .presta-card h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #a55a4a;
+    margin: 0.4rem 0;
   }
   .presta-card:hover {
-    transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
   }
   .presta-card h4 {
     font-size: 20px;
@@ -229,11 +244,11 @@
 </style>
 
 <style>
-  .presta-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
+    .presta-icon img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+    margin-bottom: 0.6rem;
   }
 
   .presta-icon img {
@@ -260,21 +275,15 @@
   }
 
 
-  .presta-meta {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin: 0.5rem 0 1rem;
-    font-size: 14px;
-    font-weight: 500;
-    color: #b48a78;
-    background: #fef4f1;
-    padding: 6px 16px;
-    border-radius: 30px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+   .presta-meta {
+    font-size: 13px;
+    background: #fef1ef;
+    color: #a37462;
+    padding: 4px 10px;
+    border-radius: 1rem;
+    margin-bottom: 0.4rem;
+    display: inline-flex;
+    gap: 10px;
   }
   .presta-meta span {
     display: inline-flex;
