@@ -648,3 +648,13 @@ body {
     min-height: 340px;
   }
 }
+
+/* Animation subtile de la carte au survol */
+#contact .contact-map {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#contact .contact-map:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
