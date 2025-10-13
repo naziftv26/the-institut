@@ -1306,6 +1306,21 @@ Drainage Lympathique visage
     });
   });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const contactSection = document.querySelector("#contact");
+
+  function handleScroll() {
+    const rect = contactSection.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      contactSection.classList.add("visible");
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+});
+</script>
 
 </body>
 </html>
