@@ -515,3 +515,136 @@ body {
   opacity: 1;
   animation: fadeInUp 1.2s ease forwards;
 }
+
+/* === CONTACT & ACCÈS — VERSION PC / TABLET === */
+#contact.contact-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, #fff7f7 0%, #ffecec 100%);
+  font-family: 'Poppins', sans-serif;
+  color: #5b3a35;
+}
+
+#contact .contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#contact .contact-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+#contact .contact-card:hover {
+  transform: translateY(-5px);
+}
+
+#contact h2 {
+  font-size: 2.2rem;
+  color: #a75b4e;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+#contact .contact-subtitle {
+  font-size: 1rem;
+  color: #7b5950;
+  margin-bottom: 2rem;
+}
+
+#contact .contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+#contact .contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+#contact .contact-item i {
+  font-size: 1.3rem;
+  color: #b48a78;
+  margin-top: 2px;
+}
+
+#contact .contact-item a {
+  color: #a75b4e;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+#contact .contact-item a:hover {
+  color: #7f3c2e;
+}
+
+#contact .contact-actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Boutons sociaux / Planity */
+.btn-social, .btn-planity-modern {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-social {
+  background: #f5dede;
+  color: #a75b4e;
+}
+.btn-social:hover {
+  background: #f0cfcf;
+}
+
+.btn-planity-modern {
+  background: linear-gradient(135deg, #b48a78, #a75b4e);
+  color: white;
+  box-shadow: 0 4px 12px rgba(180, 138, 120, 0.3);
+}
+.btn-planity-modern:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #a75b4e, #8b4a3d);
+}
+
+/* Carte Google Map */
+#contact .contact-map {
+  flex: 1;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+#contact .contact-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: none;
+}
+
+/* Adaptation pour tablette */
+@media (max-width: 1024px) {
+  #contact .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact .contact-map iframe {
+    min-height: 340px;
+  }
+}
