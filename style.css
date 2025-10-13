@@ -9,6 +9,22 @@
   gap: 12px;                 /* Espacement entre les boutons */
   margin: 20px 0;            /* Espace autour du bloc */
 }
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
 /* Section Contact */
 .contact-section {
   padding: 2em 1em;
