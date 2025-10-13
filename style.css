@@ -111,14 +111,15 @@
     border-radius: 10px;
   }
 }
-.contact-section {
+/* === SECTION CONTACT & ACCÈS UNIQUEMENT === */
+#contact.contact-section {
   padding: 3rem 1.5rem;
   background: linear-gradient(180deg, #fff7f7 0%, #ffeaea 100%);
   color: #5a3a36;
   font-family: 'Poppins', sans-serif;
 }
 
-.contact-section h2 {
+#contact .contact-section h2 {
   text-align: center;
   font-size: 2rem;
   color: #b48a78;
@@ -126,7 +127,7 @@
   font-family: 'Italianno', cursive;
 }
 
-.contact-container {
+#contact .contact-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -136,35 +137,35 @@
   justify-content: center;
 }
 
-.contact-info {
+#contact .contact-info {
   flex: 1;
   min-width: 300px;
 }
 
-.contact-details p {
+#contact .contact-details p {
   margin-bottom: 1rem;
   line-height: 1.5;
   font-size: 1rem;
 }
 
-.contact-details a {
+#contact .contact-details a {
   color: #a55a4a;
   text-decoration: none;
   font-weight: 500;
 }
 
-.contact-details a:hover {
+#contact .contact-details a:hover {
   text-decoration: underline;
 }
 
-.contact-links {
+#contact .contact-links {
   margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.social-btn {
+#contact .social-btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -178,24 +179,24 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-.social-btn:hover {
+#contact .social-btn:hover {
   background: #eac8c8;
   transform: translateY(-2px);
 }
 
-.social-btn i {
+#contact .social-btn i {
   font-size: 18px;
 }
 
-.instagram {
+#contact .instagram {
   background: #fce4ec;
 }
 
-.planity {
+#contact .planity {
   background: #f4e2dc;
 }
 
-.contact-map iframe {
+#contact .contact-map iframe {
   border-radius: 14px;
   width: 100%;
   height: 100%;
@@ -205,21 +206,21 @@
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
-  .contact-container {
+  #contact .contact-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .contact-info {
+  #contact .contact-info {
     width: 100%;
   }
 
-  .contact-links {
+  #contact .contact-links {
     align-items: center;
   }
 
-  .contact-map iframe {
+  #contact .contact-map iframe {
     width: 100%;
     height: 300px;
   }
