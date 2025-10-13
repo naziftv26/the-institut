@@ -495,3 +495,40 @@ body {
     height: 300px;
   }
 }
+
+/* === BOUTON PLANITY MODERNE === */
+.btn-planity {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #f8bebe, #eac8c8);
+  color: #7f3c2e;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-planity:hover {
+  transform: translateY(-3px) scale(1.03);
+  background: linear-gradient(135deg, #f3a8a8, #e3b7b7);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.btn-planity i {
+  font-size: 18px;
+  color: #7f3c2e;
+}
+
+@media (max-width: 768px) {
+  .btn-planity {
+    width: 90%;
+    margin: 0.8rem auto;
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
