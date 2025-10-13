@@ -658,3 +658,113 @@ body {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
+
+.promos-section {
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #fff4f4 0%, #ffe8e8 100%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.promos-section .section-title {
+  text-align: center;
+  font-size: 32px;
+  color: #b48a78;
+  margin-bottom: 40px;
+}
+
+/* Cartes avec animation */
+.promo-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #fffdfd;
+  padding: 18px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 0.8s ease forwards;
+  animation-delay: var(--delay, 0s);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.promo-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.promo-text {
+  font-size: 16px;
+  color: #5e4640;
+  line-height: 1.5;
+}
+
+.promo-text a {
+  color: #b48a78;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.promo-text a:hover {
+  text-decoration: underline;
+}
+
+.promo-card.no-cb {
+  justify-content: center;
+  text-align: center;
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Bouton Planity moderne */
+.btn-planity {
+  background: linear-gradient(135deg, #b48a78, #d48ca0);
+  color: #fff;
+  padding: 14px 36px;
+  font-size: 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(180, 138, 120, 0.3);
+  display: inline-block;
+  margin-top: 20px;
+  transform: scale(0);
+  animation: btnPop 0.6s ease forwards;
+}
+
+.btn-planity:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #a57164, #c47c90);
+}
+
+@keyframes btnPop {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .promo-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .promo-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+}
