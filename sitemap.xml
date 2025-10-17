@@ -3,27 +3,29 @@
   <!-- Page d'accueil -->
   <url>
     <loc>https://www.the-institut.com/</loc>
-    <lastmod>2025-10-14</lastmod>
+    <lastmod>2025-10-17</lastmod>
     <priority>1.0</priority>
   </url>
 
-  <!-- Section Prestations -->
+  <!-- Sections ancrées (si tu veux garder les ancres) -->
   <url>
     <loc>https://www.the-institut.com/#prestations</loc>
-    <lastmod>2025-10-14</lastmod>
+    <lastmod>2025-10-17</lastmod>
     <priority>0.9</priority>
   </url>
 
-  <!-- Section Contact -->
   <url>
     <loc>https://www.the-institut.com/#contact</loc>
-    <lastmod>2025-10-14</lastmod>
+    <lastmod>2025-10-17</lastmod>
     <priority>0.8</priority>
   </url>
 
-  <!-- Page Planity -->
+  <!-- Si tu as d'autres pages réelles (ex: /mentions, /services, /blog), liste-les ici -->
+  <!-- Exemple :
   <url>
-    <loc>https://www.planity.com/the-institut-38300-bourgoin-jallieu</loc>
+    <loc>https://www.the-institut.com/mentions-legales.html</loc>
+    <lastmod>2025-10-10</lastmod>
     <priority>0.5</priority>
   </url>
+  -->
 </urlset>
